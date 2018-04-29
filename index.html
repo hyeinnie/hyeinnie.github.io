@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HELLO!</title>
+  <script src="jquery-3.3.1.min.js"></script>
+  <style>
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    a:visited{
+      color: black;
+    }
+    a:hover{
+      color: black;
+    }
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .main, .about_wrap, .service_wrap,  .contact_wrap.{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact{
+      margin-right: 10%;
+    }
+
+    .navbar{
+      margin-left: 100px;
+    }
+
+    .about, .service, .contact{
+      float: right;
+      margin-right: 90px;
+      font-size: 20pt;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+
+
+    .main_image{
+      background-image: url("main.jpg");
+      margin-left: 10%;
+      margin-bottom: 10%;
+      background-size: 80% 100%;
+      background-repeat: no-repeat;
+      height: 800px;
+      width: auto;
+      background-opacity: 0.6;
+    }
+
+    .about_wrap{
+      background-color: #f1c40f;
+    }
+
+    .about_title, .contact_title, .service_title{
+      text-transform: uppercase;
+      border-bottom-color: gray;
+      border-bottom-style: solid;
+      border-bottom-width: thin;
+      width: 200px;
+      margin-top: 30px;
+      top: 30px;
+      margin-left: 5%;
+    }
+
+    .about_content{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .about_left{
+      width: 50%;
+      height: 700px;
+    }
+    .about_right{
+      width: 50%;
+      font-size: 30pt;
+      height: 700px;
+    }
+
+    .about_image{
+      border-radius: 50%;
+      width:40%;
+      height: %;
+      margin-top: 180px;
+      margin-bottom: 100px;
+      margin-left: 300px;
+    }
+
+    .service_image{
+      display: relative;
+      left: 10%;
+      right: 10%;
+      width: auto;
+      margin-top: 50px;
+      margin-bottom: 400px;
+    }
+
+  .image1, .image2, .image3, .image4, .image5, .image6{
+      width: 500px;
+      height: 250px;
+      float: left;
+      margin-left:5%;
+      border: 1px solid gray;
+      margin-top: 20px;
+    }
+
+    .image1{
+      background-color: skyblue;
+    }
+    .image2{
+      background-color: ivory;
+    }
+    .image3{
+      background-color: skyblue;
+    }
+    .image4{
+      background-color: ivory;
+    }
+    .image5{
+      background-color: skyblue;
+    }
+    .image6{
+        background-color: ivory;
+    }
+
+    .name{
+      position: absolute;
+      top: 0px;
+      left: 700px;
+      z-index: 2;
+      font-size: 100pt;
+    }
+
+    .contact_wrap{
+      margin-top: 180px;
+    }
+
+    .contact_content{
+      margin-left: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <div class="navbar">
+        <a href="#about">
+        <span class="about"> about   </span> </a>
+        <span class="service"> service </span>
+        <span class="contact"> contact  </span>
+      </div>
+      <div class="main_image">
+      </div>
+    </div>
+            <p class="name">김혜인</p>
+  </header>
+  <main>
+    <a id="about">
+    <div class="about_wrap"></a>
+      <br>
+      <br>
+      <div class="about_title">
+        <h1>aboutme</h1>
+      </div>
+      <div class="about_content">
+        <div class="about_left">
+          <img class="about_image" src="about.jpg" alt="">
+        </div>
+        <div class="about_right">
+          <p>이름</p>
+          <p>생년월일</p>
+          <p>소속</p>
+        </div>
+      </div>
+      <br><br><br><br>
+    </div>
+    <br><br><br>
+    <div class="service_wrap">
+      <br>
+      <div class="service_title">
+        <h1>service</h1>
+      </div>
+      <br><br>
+      <br>
+      <div class="service_image">
+        <div class="image1">
+        </div>
+        <div class="image2">
+        </div>
+        <div class="image3">
+        </div>
+        <div class="image4">
+        </div>
+        <div class="image5">
+        </div>
+        <div class="image6">
+        </div>
+
+      </div>
+    </div>
+      <br><br><br><br><br><br>
+    <div class="contact_wrap">
+      <div class="contact_title">
+        <h1>Contact</h1>
+      </div>
+      <div class="contact_content">
+        <p>메일</p>
+        <p>카톡</p>
+        <p>폰번호</p>
+        <p>주소</p>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="footer">
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
